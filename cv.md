@@ -14,6 +14,22 @@ I am studying at a **RSSchool** to improve my development skills!
 * Git
 ## Code Example:
 ```
+const asyncMap = async (arr, cb) => {
+    return arr.reduce( async (acc, val) => {
+        acc = await acc;
+        acc.push( await cb(val) );
+        return acc;
+    }, Promise.resolve([]) )
+};
+
+asyncMap([9,8,7,6,5,4,3,2,1], async (val) => {
+    const p = new Promise((r) => {
+        setTimeout(r, val * 1000);
+    });
+    await p;
+    console.log(val);1
+    return val;
+}).then(console.log);
 ```
 ## Work experience:
 * Small own busines
