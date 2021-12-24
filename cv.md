@@ -27,7 +27,7 @@ asyncMap([9,8,7,6,5,4,3,2,1], async (val) => {
         setTimeout(r, val * 1000);
     });
     await p;
-    console.log(val);1
+    console.log(val);
     return val;
 }).then(console.log);
 ```
