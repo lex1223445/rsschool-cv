@@ -13,7 +13,8 @@ I am studying at a **RSSchool** to improve my development skills!
 * Windows OS
 * Git
 ## Code Example:
-```const asyncMap = async (arr, cb) => {
+```js
+const asyncMap = async (arr, cb) => {
     return arr.reduce( async (acc, val) => {
         acc = await acc;
         acc.push( await cb(val) );
@@ -33,7 +34,7 @@ asyncMap([9,8,7,6,5,4,3,2,1], async (val) => {
 ## Work experience:
 * Small own busines
 ## Education and courses:
-1. Video courses on YouTube (HTML,CSS,JS,GIT)
+1.Video courses on YouTube (HTML,CSS,JS,GIT)
 2. JavaScript https://learn.javascript.ru/
 ## Language:
 English level - A2
