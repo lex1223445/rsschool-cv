@@ -40,8 +40,8 @@ asyncMap([9,8,7,6,5,4,3,2,1], async (val) => {
 * Small own busines
 
 ## Education and courses:
-1.Video courses on YouTube (HTML,CSS,JS,GIT)
-2.JavaScript https://learn.javascript.ru/
+* Video courses on YouTube (HTML,CSS,JS,GIT)
+* JavaScript https://learn.javascript.ru/
 
 ## Language:
 English level - A2
