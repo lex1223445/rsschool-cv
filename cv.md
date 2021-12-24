@@ -13,8 +13,7 @@ I am studying at a **RSSchool** to improve my development skills!
 * Windows OS
 * Git
 ## Code Example:
-```
-const asyncMap = async (arr, cb) => {
+```const asyncMap = async (arr, cb) => {
     return arr.reduce( async (acc, val) => {
         acc = await acc;
         acc.push( await cb(val) );
