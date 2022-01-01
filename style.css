@@ -2,6 +2,17 @@
     background: black;
 }
 
-.txt {
+body {
     color: white;
+}
+
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+.txt_code {
+    color: black;
 }

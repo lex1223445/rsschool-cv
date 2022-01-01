@@ -10,7 +10,50 @@
 </head>
 
 <body class="stl">
-    <h1 class="txt">Salanovich Ivan</h1>
+    <h1>Salanovich Ivan</h1>
+    <h2>Contacts:</h2>
+    <ul>
+        <li><b>E-mail:</b> sivann97@gmail.com</li>
+        <li><b>GitHub:</b> lex1223445</li>
+        <li><b>Discord:</b> Ivan Salanovcich </li>
+        <li><b>Tel.:</b> +375296976964 </li>
+    </ul>
+    <h2>About me:</h2>
+    <div>
+        I am studying at a RSSchool to improve my development skills!
+    </div>
+    <h2>Skils:</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Windows OS</li>
+        <li>Git</li>
+    </ul>
+    <h2>Code Example:</h2>
+    <pre>
+        <code class="txt_code">
+            const asyncMap = async (arr, cb) => {
+                return arr.reduce( async (acc, val) => {
+                    acc = await acc;
+                    acc.push( await cb(val) );
+                    return acc;
+                }, Promise.resolve([]) )
+            };
+            
+            asyncMap([9,8,7,6,5,4,3,2,1], async (val) => {
+                const p = new Promise((r) => {
+                    setTimeout(r, val * 1000);
+                });
+                await p;
+                console.log(val);
+                return val;
+            }).then(console.log);
+        </code>
+    </pre>
+    <h2>Work experience:</h2>
+    <h2>Education and courses:</h2>
+    <h2>Language:</h2>
 </body>
 
 </html>
