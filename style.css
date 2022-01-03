@@ -4,15 +4,59 @@
 
 body {
     color: white;
+    margin: 20px auto;
+    max-width: 1024px;
 }
 
 code {
-    background-color: #eee;
-    border: 1px solid #999;
     display: block;
-    padding: 20px;
+    background-color: #eee;
+    border: 2px solid #999;
+    padding: 2px;
 }
 
 .txt_code {
     color: black;
+}
+
+.site_lk {
+    color: white;
+    text-decoration: none;
+}
+
+.github_page {
+    width: 115px;
+    height: 55px;
+}
+
+.rss_page {
+    width: 60px;
+    height: 55px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.footer_txt {
+    font-size: 55px;
+}
+
+.nav_txt {
+    padding: 0 3px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 285px;
+    height: 240px;
 }
