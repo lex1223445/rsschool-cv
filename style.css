@@ -60,3 +60,7 @@ h1 {
     width: 285px;
     height: 240px;
 }
+
+.li_m {
+    list-style-type: none;
+}
