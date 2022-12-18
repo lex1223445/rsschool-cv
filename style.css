@@ -1,13 +1,19 @@
-.stl {
-    background: black;
-}
-
 body {
+    background: black;
     color: white;
     margin: 20px auto;
     max-width: 1024px;
 }
 
+.container {
+    
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    display: block;
+    align-items: center;
+}
 code {
     display: block;
     background-color: #eee;
@@ -22,6 +28,7 @@ code {
 .site_lk {
     color: white;
     text-decoration: none;
+    
 }
 
 .github_page {
@@ -45,10 +52,6 @@ footer {
     font-size: 55px;
 }
 
-.nav_txt {
-    padding: 0 3px;
-}
-
 h1 {
     text-align: center;
 }
@@ -60,7 +63,13 @@ h1 {
     width: 285px;
     height: 240px;
 }
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+gap: 5%;
+}
 
-.li_m {
+li {
     list-style-type: none;
 }
