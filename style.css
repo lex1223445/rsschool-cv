@@ -1,16 +1,24 @@
+*{
+    margin: 0;
+}
 body {
     background: white;
     color: black;
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 .container {
     max-width: 80%;
     margin: 0 auto;
 }
+
 header {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 50px;
     width: 100%;
-    background: linear-gradient(blue, pink);
+    background: linear-gradient(blue, grey,rgb(188, 228, 9), rgb(173, 29, 53));
 }
 
 code {
@@ -26,23 +34,45 @@ code {
 }
 
 .site_lk {
+    font-size: 140%;
+    height: 10px;
     color: black;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .github_page {
     width: 115px;
     height: 55px;
 }
+.site_GH{
 
+    color:black;
+    text-decoration: none;
+}
+
+.cotact_list{
+display: flex;
+flex-direction: column;
+gap: 5px;
+align-items: center;
+}
 .rss_page {
     width: 60px;
     height: 55px;
 }
-
-.footer {
+.footer_background{
+    background: linear-gradient(blue, rgb(188, 228, 9)) ;
+}
+.language{
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+
+    overflow: hidden;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
@@ -51,25 +81,51 @@ code {
 .footer_txt {
     font-size: 350%;
 }
-a{
-    width: 100%;
+.code{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 h1 {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
+h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+pre{
+    width: 80%;
+    overflow: hidden;
+}
+.project_block{
+    overflow: hidden;
+}
 .photo {
     display: block;
-margin: 0 auto;
-    width: 60%;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 30px;
 }
+
 .navigation {
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-gap: 5%;
+    align-items: center;
+    gap: 30px;
 }
 
 li {
     list-style-type: none;
+}
+.grey1_background{
+    background-color: rgba(128, 128, 128, 0.178);
+}
+.grey2_background {
+    background-color: rgba(128, 128, 128, 0.514);
 }
