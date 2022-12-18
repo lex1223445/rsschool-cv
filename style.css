@@ -1,24 +1,24 @@
 body {
-    background: black;
-    color: white;
-    margin: 20px auto;
-    max-width: 1024px;
+    background: white;
+    color: black;
+margin: 0 auto;
 }
 
 .container {
-    
+    max-width: 80%;
     margin: 0 auto;
 }
 header {
     width: 100%;
-    display: block;
-    align-items: center;
+    background: linear-gradient(blue, pink);
 }
+
 code {
     display: block;
     background-color: #eee;
     border: 2px solid #999;
     padding: 2px;
+    width: 100%;
 }
 
 .txt_code {
@@ -26,9 +26,8 @@ code {
 }
 
 .site_lk {
-    color: white;
+    color: black;
     text-decoration: none;
-    
 }
 
 .github_page {
@@ -41,27 +40,28 @@ code {
     height: 55px;
 }
 
-footer {
+.footer {
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     padding: 5px;
 }
 
 .footer_txt {
-    font-size: 55px;
+    font-size: 350%;
 }
-
+a{
+    width: 100%;
+}
 h1 {
     text-align: center;
 }
 
 .photo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 285px;
-    height: 240px;
+margin: 0 auto;
+    width: 60%;
 }
 .navigation {
     display: flex;
