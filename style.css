@@ -1,11 +1,24 @@
-.stl {
-    background: black;
+*{
+    margin: 0;
+}
+body {
+    background: white;
+    color: black;
+    margin: 0 auto;
 }
 
-body {
-    color: white;
-    margin: 20px auto;
-    max-width: 1024px;
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(blue, grey,rgb(188, 228, 9), rgb(173, 29, 53));
 }
 
 code {
@@ -13,6 +26,7 @@ code {
     background-color: #eee;
     border: 2px solid #999;
     padding: 2px;
+    width: 100%;
 }
 
 .txt_code {
@@ -20,21 +34,44 @@ code {
 }
 
 .site_lk {
-    color: white;
+    font-size: 140%;
+    height: 10px;
+    color: black;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .github_page {
     width: 115px;
     height: 55px;
 }
+.site_GH{
 
+    color:black;
+    text-decoration: none;
+}
+
+.cotact_list{
+display: flex;
+flex-direction: column;
+gap: 5px;
+align-items: center;
+}
 .rss_page {
     width: 60px;
     height: 55px;
 }
+.footer_background{
+    background: linear-gradient(blue, rgb(188, 228, 9)) ;
+}
+.language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
 
-footer {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,25 +79,53 @@ footer {
 }
 
 .footer_txt {
-    font-size: 55px;
+    font-size: 350%;
 }
-
-.nav_txt {
-    padding: 0 3px;
+.code{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
-
 h1 {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
+h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+pre{
+    width: 80%;
+    overflow: hidden;
+}
+.project_block{
+    overflow: hidden;
+}
 .photo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 285px;
-    height: 240px;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 30px;
 }
 
-.li_m {
+.navigation {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
     list-style-type: none;
+}
+.grey1_background{
+    background-color: rgba(128, 128, 128, 0.178);
+}
+.grey2_background {
+    background-color: rgba(128, 128, 128, 0.514);
 }

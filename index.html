@@ -9,103 +9,138 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="stl">
+<body>
     <header>
-        <nav> Navigation:
-            <ul>
-                <li class="li_m">
-                    <a href="#contacts" class="site_lk nav_txt">Contacts</a>
-                    <a href="#about" class="site_lk nav_txt">About me</a>
-                    <a href="#skills" class="site_lk nav_txt">Skills</a>
-                    <a href="#code" class="site_lk nav_txt">Code Example</a>
-                    <a href="#work_exp" class="site_lk nav_txt">Work experience</a>
-                    <a href="#education" class="site_lk nav_txt">Education</a>
-                    <a href="#project" class="site_lk nav_txt">Projects</a>
-                    <a href="#lang" class="site_lk nav_txt">Language</a>
-                </li>
+        <nav class="container">
+            <ul class="navigation">
+
+                <li><a href="#contacts" class="site_lk">Contacts</a></li>
+                <li><a href="#about" class="site_lk">About me</a></li>
+                <li><a href="#skills" class="site_lk">Skills</a></li>
+                <li><a href="#code" class="site_lk">Code example</a></li>
+                <li><a href="#work_exp" class="site_lk">Work experience</a></li>
+                <li><a href="#education" class="site_lk">Education</a></li>
+                <li><a href="#project" class="site_lk ">Projects</a></li>
+                <li><a href="#lang" class="site_lk">Language</a></li>
+
             </ul>
         </nav>
-        <hr />
-        <img src="img/photo.jpg" alt="My photo" class="photo" />
-        <h1>Salanovich Ivan</h1>
-        <hr />
-
     </header>
+
     <main>
-        <h2 id="contacts">Contacts:</h2>
-        <ul>
-            <li><b>E-mail:</b> sivann97@gmail.com</li>
-            <li><b>GitHub:</b><a target="_blank" href="https://github.com/lex1223445" class="site_lk"> lex1223445</a></li>
-            <li><b>Discord:</b> Ivan Salanovcich(@lex1223445) </li>
-            <li><b>Tel.:</b> +375296976964 </li>
-        </ul>
-        <hr />
-        <h2 id="about">About me:</h2>
-        <div>
-            I am studying at a RSSchool to improve my development skills!
+        <div class="grey1_background">
+        <div class="container">
+            <img src="img/photo.jpg" alt="My photo" class="photo">
+            <h1>Salanovich Ivan</h1>
         </div>
-        <hr />
-        <h2 id="skills">Skils:</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Windows OS</li>
-            <li>Git</li>
-        </ul>
-        <hr />
-        <h2 id="code">Code Example:</h2>
-        <pre>
-        <code class="txt_code">
-            const asyncMap = async (arr, cb) => {
-                return arr.reduce( async (acc, val) => {
+        </div>
+        <div class="grey2_background">
+        <div class="container contacts_section">
+            <h2 id="contacts">Contacts</h2>
+            <ul class="cotact_list">
+                <li><b>E-mail:</b> sivann97@gmail.com</li>
+                <li><b>GitHub:</b><a target="_blank" href="https://github.com/lex1223445" class="site_GH">lex1223445</a>
+                </li>
+                <li><b>Discord:</b>Ivan Salanovcich(@lex1223445)</li>
+                <li><b>Tel.:</b>+375296976964</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grey1_background">
+        <div class="container">
+            <h2 id="about">About me</h2>
+            <div>
+                I am studying at a RSSchool to improve my development skills!
+            </div>
+        </div>
+    </div>
+        <div class="grey2_background">
+        <div class="container">
+            <h2 id="skills">Skils</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Windows OS</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        </div>
+        <div class="grey1_background">
+        <div class="container code">
+            <h2 id="code">Code Example</h2>
+            <pre>
+            <code class="txt_code">
+         const asyncMap = async (arr, cb) =&gt; {
+                return arr.reduce( async (acc, val) =&gt; {
                     acc = await acc;
                     acc.push( await cb(val) );
                     return acc;
                 }, Promise.resolve([]) )
-            };
-            
-            asyncMap([9,8,7,6,5,4,3,2,1], async (val) => {
-                const p = new Promise((r) => {
+            };  asyncMap([9,8,7,6,5,4,3,2,1], async (val) =&gt; {
+                const p = new Promise((r) =&gt; {
                     setTimeout(r, val * 1000);
                 });
                 await p;
                 console.log(val);
                 return val;
             }).then(console.log);
-        </code>
-    </pre>
-        <hr />
-        <h2 id="work_exp">Work experience:</h2>
-        <ul>
-            <li> Small own busines </li>
-        </ul>
-        <hr />
-        <h2 id="education">Education and courses:</h2>
-        <ul>
-            <li> Graduated the Belarusian University of Informatics and Radioelectronics: Electronic systems</li>
-            <li> Graduated the Belarusian University of Informatics and Radioelectronics Master's degree: Radio systems and radio technologies</li>
-            <li> Video courses on YouTube (HTML,CSS,JS,GIT)</li>
-            <li><a target="_blank" href="https://learn.javascript.ru/" class="site_lk"> JavaScript</a> </li>
-        </ul>
-        <hr />
-        <h2 id="project">Projects:</h2>
-        <ul>
-            <li><a target="_blank" href="https://lex1223445.github.io/rsschool-cv/" class="site_lk"> https://lex1223445.github.io/rsschool-cv/</a> </li>
-        </ul>
-        <hr />
-        <h2 id="lang">Language:</h2>
-        <p>English level - A2</p>
-        <hr />
+            </code>
+        </pre>
+        </div>
+    </div>
+        <div class="grey2_background">
+        <div class="container">
+            <h2 id="work_exp">Work experience</h2>
+            <ul>
+                <li>Small own busines</li>
+            </ul>
+        </div>
+    </div>
+    <div class="grey1_background">
+        <div class="container">
+            <h2 id="education">Education and courses:</h2>
+            <ul>
+                <li> Graduated the Belarusian University of Informatics and Radioelectronics: Electronic systems</li>
+                <li> Graduated the Belarusian University of Informatics and Radioelectronics Master's degree: Radio
+                    systems
+                    and radio technologies</li>
+                <li> Video courses on YouTube (HTML,CSS,JS,GIT)</li>
+                <li><a target="_blank" href="https://learn.javascript.ru/" class="site_GH">JavaScript</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="grey2_background">
+        <div class="container">
+            <h2 id="project">Projects</h2>
+            <ul class="project_block">
+                <li><a target="_blank" href="https://lex1223445.github.io/rsschool-cv/" class="site_GH">
+                        https://lex1223445.github.io/rsschool-cv/</a> </li>
+            </ul>
+        </div>
+        </div>
+        <div class="grey1_background">
+        <div class="container language">
+            <h2 id="lang">Language</h2>
+            <p>English level - A2</p>
+        </div>
+    </div>
+    
     </main>
     <footer>
-        <div class="footer_txt">2022</div>
-        <div>
-            <a target="_blank" href="https://github.com/lex1223445"><img src="img/github.jpg" alt="link to GitHub" class="github_page" /> </a>
+        <div class="footer_background">
+        <div class="footer container">
+            <div class="footer_txt">2022</div>
+            <div>
+                <a target="_blank" href="https://github.com/lex1223445"><img src="img/github.jpg" alt="link to GitHub"
+                        class="github_page"></a>
+            </div>
+            <div>
+                <a target="_blank" href="https://rs.school/js"><img src="img/rss.jpg" alt="link to RSSchool"
+                        class="rss_page"></a>
+            </div>
         </div>
-        <div>
-            <a target="_blank" href="https://rs.school/js"><img src="img/rss.jpg" alt="link to RSSchool" class="rss_page" /> </a>
-        </div>
+    </div>
     </footer>
 </body>
 
