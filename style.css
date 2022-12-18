@@ -18,7 +18,7 @@ header {
     align-items: center;
     height: 50px;
     width: 100%;
-    background: linear-gradient(blue, grey,rgb(188, 228, 9), rgb(173, 29, 53));
+    background: linear-gradient(blue,rgb(188, 228, 9), rgb(173, 29, 53));
 }
 
 code {
